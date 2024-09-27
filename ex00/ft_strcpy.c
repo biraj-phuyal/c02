@@ -6,7 +6,7 @@
 /*   By: bphuyal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:57:02 by bphuyal           #+#    #+#             */
-/*   Updated: 2024/09/26 15:08:15 by bphuyal          ###   ########.fr       */
+/*   Updated: 2024/09/27 12:55:09 by bphuyal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,19 @@
 
 char	*ft_strcpy(char *dest, char *src)
 {
-	int	i;
+	char *ori;
 
-	i = 0;
-	while (src[i] != '\0')
+        ori = dest;
+	while (*src)
 	{
 		*dest = *src;
 		dest++;
 		src++;
 	}
 	*dest = '\0';
-	return (dest);
+	return (ori);
 }
-
+/*
 int	main()
 {
 	char src[] = "blah blah";
@@ -35,3 +35,4 @@ int	main()
 	ft_strcpy(dest, src);
 	printf("Copied string = %s\n", dest);
 }
+*/
