@@ -6,7 +6,7 @@
 /*   By: bphuyal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 13:53:55 by bphuyal           #+#    #+#             */
-/*   Updated: 2024/09/28 20:46:03 by bphuyal          ###   ########.fr       */
+/*   Updated: 2024/09/28 21:16:06 by bphuyal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int main() {
 
     char dest[10];
     
-    ft_strncpy(dest, src, 15);
+    ft_strncpy(dest, src, 4);
 
     printf("%s\n",dest);
 

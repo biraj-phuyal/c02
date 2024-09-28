@@ -6,7 +6,7 @@
 /*   By: bphuyal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 20:23:08 by bphuyal           #+#    #+#             */
-/*   Updated: 2024/09/28 20:50:37 by bphuyal          ###   ########.fr       */
+/*   Updated: 2024/09/28 21:19:17 by bphuyal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_str_is_numeric(char *str)
 /*
 int main()
 {
-        char b[]= "";
+        char b[]= "152";
         int i = ft_str_is_numeric(b);
         printf("%d", i);
 }
