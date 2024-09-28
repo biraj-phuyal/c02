@@ -1,32 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bphuyal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 20:53:00 by bphuyal           #+#    #+#             */
-/*   Updated: 2024/09/28 21:11:21 by bphuyal          ###   ########.fr       */
+/*   Created: 2024/09/28 13:12:10 by bphuyal           #+#    #+#             */
+/*   Updated: 2024/09/28 20:41:04 by bphuyal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_printable(char *str)
+char	*ft_strlowcase(char *str)
 {
-	while (*str)
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (!(*str >= 32 && *str <= 126))
-		{
-			return (0);
-		}
-		str++;
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] = str[i] + 32;
+		i++;
 	}
-	return (1);
+	return (str);
 }
 /*
 int	main()
 {
-        char b[]= "Hello\x07World\x01\x02\nGoodbye\x1B[31mColored";
-        int i = ft_str_is_printable(b);
-        printf("%d", i);
+        char str[] = "AHAHAHA";
+        ft_strlowcase(str);
+        printf("%s", str);
+	return 0;
 }
 */

@@ -6,17 +6,15 @@
 /*   By: bphuyal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:57:02 by bphuyal           #+#    #+#             */
-/*   Updated: 2024/09/27 12:55:09 by bphuyal          ###   ########.fr       */
+/*   Updated: 2024/09/28 20:44:06 by bphuyal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 char	*ft_strcpy(char *dest, char *src)
 {
-	char *ori;
+	char	*ori;
 
-        ori = dest;
+	ori = dest;
 	while (*src)
 	{
 		*dest = *src;

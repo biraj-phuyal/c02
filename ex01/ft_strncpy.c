@@ -6,19 +6,18 @@
 /*   By: bphuyal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 13:53:55 by bphuyal           #+#    #+#             */
-/*   Updated: 2024/09/26 17:04:20 by bphuyal          ###   ########.fr       */
+/*   Updated: 2024/09/28 20:46:03 by bphuyal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strncpy(char *dest, char *src, unsigned int n)
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int	i;
-	char *ori_dest = dest;
 
 	i = 0;
-	while (i != n)
+	while (i < n)
 	{
-		if(*src)
+		if (*src)
 		{
 			*dest = *src;
 			src++;
@@ -30,14 +29,18 @@ char *ft_strncpy(char *dest, char *src, unsigned int n)
 		dest++;
 		i++;
 	}
-	return (ori_dest);
+	return (dest);
 }
 /*
 int main() {
-    char src[] = "Hello, world!";
-    char dest[20]; 
-    ft_strncpy(dest, src, 5);
-    printf("%s", dest);
+    char src[] = "Hello";
+
+    char dest[10];
+    
+    ft_strncpy(dest, src, 15);
+
+    printf("%s\n",dest);
+
     return 0;
 }
 */
